@@ -15,13 +15,20 @@ namespace NET6MVCWebPractice.Controllers
 
         public IActionResult Index()
         {
-            return View();
+
+            return View(new TestViewModel
+            {
+                Id = "123",
+                Name = "Test",
+                Change = "ABC"
+            });
         }
 
         public IActionResult Privacy()
         {
             return View();
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -1,8 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@model TestViewModel
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome MessageBoard</h1>
+    <p>測試網頁</p>
+    <p>輸入框測試:<br/>
+        Id:         @Html.DisplayTextFor(x=>x.Id)       <br/>
+        ChangeValue:@Html.DisplayTextFor(x=>x.Change)   <br/>
+        TestName:   @Html.DisplayTextFor(x=>x.Name)     <br/>
+    </p> 
 </div>
